@@ -1,0 +1,5 @@
+/data/alpha_roster.txt
+/data/USAF_DISTRO_TREE.txt
+/.pytest_cache/
+/src/__pycache__/
+/tests/__pycache__/
