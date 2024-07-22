@@ -8,10 +8,10 @@ TEST_DISTRO_ERROR = "./tests/test_data/test_distro_error.txt"
 
 def test_is_correct_format():
     result = parse_roster.is_correct_format(TEST_ROSTER_CORRECT, "alpha")
-    assert result == []
+    assert not result
 
     result = parse_roster.is_correct_format(TEST_DISTRO_CORRECT, "distro")
-    assert result == []
+    assert not result
 
 
 def test_is_wrong_format():
