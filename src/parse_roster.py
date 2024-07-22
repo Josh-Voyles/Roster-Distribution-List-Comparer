@@ -85,7 +85,7 @@ def remove_semic_newline(line) -> str:
 def is_distro_name(line) -> bool:
     """checks for distro list name XXX_XXX_XXX"""
     distro_list_pattern = r"[A-Z]+(\_[A-Z]+)+$"
-    return line != "" and re.match(distro_list_pattern, line) is None
+    return line != "" and re.match(distro_list_pattern, line) is not None
 
 
 def get_email(line) -> str:
